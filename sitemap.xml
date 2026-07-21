@@ -11,4 +11,9 @@
       <image:caption>KDP book listing readiness score and SEO audit preview</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://Viyozc.github.io/booklisting-ai/blog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
