@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookListing AI — KDP Listing SEO, free audit + AI metadata (for self-published authors)</title>
+  <meta name="description" content="BookListing AI helps KDP self-published authors rank higher. Run a free KDP Listing SEO Audit — get a 0–100 score and fix your title, 7 keywords, description, and categories in minutes." />
+  <link rel="canonical" href="https://Viyozc.github.io/booklisting-ai/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BookListing AI — KDP Listing SEO, free audit + AI metadata (for self-published authors)" />
+  <meta property="og:description" content="BookListing AI helps KDP self-published authors rank higher. Run a free KDP Listing SEO Audit — get a 0–100 score and fix your title, 7 keywords, description, and categories in minutes." />
+  <meta property="og:url" content="https://Viyozc.github.io/booklisting-ai/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BookListing AI — KDP Listing SEO, free audit + AI metadata (for self-published authors)" />
+  <meta name="twitter:description" content="BookListing AI helps KDP self-published authors rank higher. Run a free KDP Listing SEO Audit — get a 0–100 score and fix your title, 7 keywords, description, and categories in minutes." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"SoftwareApplication","name":"BookListing AI","url":"https://Viyozc.github.io/booklisting-ai/","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{{"@type":"Offer","price":"0","priceCurrency":"USD"}}}}
+  </script>
+</head>
+<body>
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">BookListing<span class="brand-dot">.</span>ai</a>
+      <nav class="nav-links">
+        <a href="#audit">Free Audit</a>
+        <a href="#how">How it works</a>
+        <a href="#why">Why KDP authors</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="#audit">Run free audit</a>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="badge">Built for KDP self-published authors</span>
+        <h1>Turn your KDP book into a <span class="hl">ranking machine</span>.</h1>
+        <p class="lede">
+          Most self-published books sell fewer than 10 copies because the title, 7 backend
+          keywords, and description are guessed, not engineered. BookListing AI scores your
+          listing like Amazon's search (COSMO) does — and tells you exactly what to fix.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#audit">Run a free KDP SEO Audit →</a>
+          <span class="hero-note">No signup required · 30 seconds · 100% free</span>
+        </div>
+        <div class="hero-stats">
+          <div><strong>7</strong><span>backend keywords</span></div>
+          <div><strong>200</strong><span>chars in the title</span></div>
+          <div><strong>0–100</strong><span>SEO score you get</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="score-card">
+          <div class="score-ring"><span class="score-num" id="heroScore">—</span><span class="score-grad">/100</span></div>
+          <div class="score-meta">
+            <span class="grade" id="heroGrade">Grade</span>
+            <span class="score-sub">Your book's SEO health</span>
+          </div>
+          <div class="mini-bars">
+            <div class="mbar"><i style="width:80%"></i><span>Title</span></div>
+            <div class="mbar"><i style="width:62%"></i><span>Keywords</span></div>
+            <div class="mbar"><i style="width:70%"></i><span>Description</span></div>
+            <div class="mbar"><i style="width:58%"></i><span>Categories</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Audit Tool ===== -->
+  <section class="audit" id="audit">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free KDP Listing SEO Audit</h2>
+        <p>Paste your current book's metadata. We'll score it against how Amazon search actually ranks, and hand you a prioritized fix list. No account, no credit card.</p>
+      </div>
+
+      <div class="audit-grid">
+        <!-- Input -->
+        <form class="audit-form" id="auditForm" novalidate>
+          <label class="field">
+            <span>Book title (+ subtitle) <em id="titleCount">0 / 200</em></span>
+            <input type="text" id="fTitle" maxlength="200" placeholder="e.g. The Calm Mom: A 12-Week Printable Planner for Stress-Free Parenting" />
+          </label>
+
+          <label class="field">
+            <span>7 backend keywords (comma separated) <em id="tagCount">0 / 7</em></span>
+            <textarea id="fTags" rows="3" placeholder="mom planner, printable planner, parenting book, stress relief, family organizer, new mom gift, calendar 2026"></textarea>
+          </label>
+
+          <label class="field">
+            <span>Description (book description / blurb)</span>
+            <textarea id="fDesc" rows="4" placeholder="What's the book about, who it's for, what they'll get..."></textarea>
+          </label>
+
+          <label class="field">
+            <span>Categories (comma separated, up to 3) <em id="catCount">0 / 3</em></span>
+            <input type="text" id="fCats" placeholder="Family & Relationships, Self-Help, Parenting" />
+          </label>
+
+          <label class="field">
+            <span>Target keyword / main search phrase <em>optional but recommended</em></span>
+            <input type="text" id="fKeyword" placeholder="e.g. printable mom planner" />
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Run my free audit →</button>
+          <p class="form-fine">Everything runs in your browser. We never store your book until you ask us to email it.</p>
+        </form>
+
+        <!-- Result -->
+        <div class="audit-result" id="auditResult" hidden>
+          <div class="result-top">
+            <div class="score-ring lg">
+              <span class="score-num" id="resScore">0</span>
+              <span class="score-grad">/100</span>
+            </div>
+            <div>
+              <span class="grade big" id="resGrade">—</span>
+              <p class="result-sub" id="resSummary">—</p>
+            </div>
+          </div>
+
+          <div class="bars" id="resBars"></div>
+
+          <div class="tips">
+            <h3>What to fix first</h3>
+            <ul id="resTips"></ul>
+          </div>
+
+          <form class="email-capture" id="emailForm" action="https://formspree.io/f/meeyzkdp" method="POST">
+            <label for="fEmail">Get the full report + weekly KDP SEO tips by email</label>
+            <div class="email-row">
+              <input type="email" id="fEmail" name="email" placeholder="you@email.com" required />
+              <button type="submit" class="btn btn-primary">Email my report</button>
+            </div>
+            <p class="form-fine" id="emailNote">No spam. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How it works ===== -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-head">
+        <h2>How BookListing AI works</h2>
+        <p>Three steps from guessed metadata to engineered metadata.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Audit</h3>
+          <p>Drop in your title, 7 keywords, description, and categories. BookListing AI scores each dimension the way Amazon's COSMO search weights them.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Generate</h3>
+          <p>One click rewrites your title + subtitle, fills all 7 backend keywords with high-intent phrases, and drafts a conversion-ready description and A+ content.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Rank</h3>
+          <p>Copy the optimized metadata, publish, and track ranking movement. Repeat for your whole catalog in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why KDP authors ===== -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why KDP authors need this</h2>
+        <p>Self-publishing is booming — and the winners are the ones Amazon's search can actually find.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>Discovery is 100% search</h3>
+          <p>Readers find books by typing. Your 7 backend keywords + title + categories are the only handles Amazon has to match them. Get them wrong and you're invisible.</p>
+        </div>
+        <div class="why-card">
+          <h3>You publish in volume</h3>
+          <p>Profitable KDP authors run 12+ titles. Hand-optimizing each book's metadata is impossible. BookListing AI optimizes the whole catalog at once.</p>
+        </div>
+        <div class="why-card">
+          <h3>Long-tail is everything</h3>
+          <p>Buyers search "printable mom planner for anxiety", not just "planner". 7 well-built keywords capture the phrases that convert.</p>
+        </div>
+        <div class="why-card">
+          <h3>Margins are pure</h3>
+          <p>No printing cost you don't control, no inventory. Every extra sale from better SEO is near-100% margin. Optimization pays back instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Is the audit really free?</summary>
+          <p>Yes. The on-page audit runs entirely in your browser and costs nothing. No account needed.</p>
+        </details>
+        <details>
+          <summary>Do I need to give you my Amazon/KDP login?</summary>
+          <p>Never. You paste your book's metadata manually. BookListing AI never touches your KDP account.</p>
+        </details>
+        <details>
+          <summary>How is the score calculated?</summary>
+          <p>We weight title length & keyword placement, all 7 backend keywords (favoring multi-word phrases), keyword coverage across title/keywords/description, description depth, and category selection — the same signals Amazon search rewards.</p>
+        </details>
+        <details>
+          <summary>Will this guarantee I rank #1?</summary>
+          <p>No tool can. But fixing the fundamentals beats guessing, and most books leave easy points on the table. BookListing AI shows you exactly where.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#top">BookListing<span class="brand-dot">.</span>ai</a>
+        <p class="footer-sub">KDP listing SEO for self-published authors. AI-assisted, human-approved.</p>
+      </div>
+            <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:13px;margin-top:10px;">
+        <span style="color:var(--muted);font-weight:600;">More free audit tools:</span>
+<a href="https://Viyozc.github.io/listora/" style="color:var(--brand-dk);font-weight:600;">Listora</a><a href="https://Viyozc.github.io/booklisting-ai/" style="color:var(--brand-dk);font-weight:600;">BookListing</a><a href="https://Viyozc.github.io/mockly-ai/" style="color:var(--brand-dk);font-weight:600;">Mockly</a><a href="https://Viyozc.github.io/newsletterly-ai/" style="color:var(--brand-dk);font-weight:600;">Newsletterly</a>
+      </div>
+      <p class="footer-fine">BookListing AI is an independent tool and is not affiliated with Amazon.com, Inc. or Kindle Direct Publishing. "KDP" and "Kindle" are trademarks of Amazon.com, Inc.</p>
+    </div>
+  </footer>
+
+  <script src="assets/audit.js"></script>
+</body>
+</html>
