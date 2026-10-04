@@ -1,0 +1,19 @@
+# BookListing AI
+
+> BookListing AI helps KDP self-published authors rank higher. Run a free KDP Listing SEO Audit — get a 0–100 score and fix your title, 7 keywords, description, and categories in minutes.
+
+Canonical host: https://booklisting.aiyes.space
+
+## Core pages
+
+- [Home](https://booklisting.aiyes.space/)
+
+## Blog
+
+- [Amazon Keywords for Books: The 9 Places They Actually Matter](https://booklisting.aiyes.space/blog/amazon-keywords-books/)
+- [KDP Keyword Research & Book Listing SEO That Gets You Found](https://booklisting.aiyes.space/blog/)
+
+## Canonical discovery
+
+- [Sitemap](https://booklisting.aiyes.space/sitemap.xml)
+- [Robots](https://booklisting.aiyes.space/robots.txt)
